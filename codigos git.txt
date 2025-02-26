@@ -1,0 +1,43 @@
+*git init → Cria um repositório Git na pasta atual.*
+git config --global user.name "Seu Nome" → Define seu nome no Git.
+git config --global user.email "seu@email.com" → Define seu e-mail no Git.
+
+///////////////////////////////////////////////////////////////////////
+
+*git add . → Adiciona todos os arquivos modificados ao estágio de commit.*
+*git commit -m "mensagem" → Cria um commit com as alterações adicionadas.*
+
+//////////////////////////////////////////////////////////////////////////
+
+git checkout <número-da-branch> → Troca para outra branch.
+git checkout -b <número-da-branch> → Cria e já troca para a nova branch.
+git checkout master → Volta para branch inicial.
+git checkout -- → Irá desfazer todas as alterações que não estejam no Stage desde o último commit.
+git checkout HEAD -- → Irá desfazer todas as alterações que não estejam no Stage desde o último commit.
+
+
+//////////////////////////////////////////////////////////////////////////
+
+git remote - Associa o repositório local ao remoto.
+git push → Envia commits para o repositório remoto.
+git pull → Atualiza o repositório local com as mudanças remotas.
+git fetch → Busca as alterações do repositório remoto sem aplicá-las automaticamente.
+
+///////////////////////////////////////////////////////////////////////////
+
+git log → Exibe o histórico de commits.
+git diff HEAD~1 → Mostra diferenças entre os arquivos modificados e o último commit.
+git revert <número do commit> → Irá criar um novo commit que desfaz as alterações do commit especificado.
+git reset <número do commit> → Resetar o repositório para um determinado commit.
+git reset HEAD~x --hard<número do commit> → Resetar e remover todas as alterações da quantidade de commits citados.
+git reset --hard<número do commit> → • Resetar e remover todas as alterações.
+
+///////////////////////////////////////////////////////////////////////////
+
+git clone <URL do repositório> → Faz uma cópia (clone) de um repositório remoto para sua máquina.
+git status → Mostra o estado atual dos arquivos (modificados, não rastreados, prontos para commit).
+
+///////////////////////////////////////////////////////////////////////////
+
+code arquivo.txt → editar arquivos de maneira simples.
+type arquivo.txt → exibir o conteúdo de arquivos no terminal.
